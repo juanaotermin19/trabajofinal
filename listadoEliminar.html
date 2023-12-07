@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    
+    body {
+        background-color: #D15A7C; /* Cambia el color de fondo según tus preferencias */
+        color: #8B4513; /* Cambia el color del texto según tus preferencias */
+        padding: 20px;
+    }
+
+    h1, h3 {
+        text-align: center;
+    }
+    h1 {
+        color:#fff
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4 text-center">Eliminar Productos de la tienda</h1>
+        <h3 class="mb-3 text-center">Dulce de Leche Helados</h3>
+
+    <table class="table mt-4">
+        <thead class="thead-dark">
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th align="right">Precio</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+        <tbody>
+            <tr v-for="producto in productos">
+                <td>{{ producto.codigo }}</td>
+                <td>{{ producto.descripcion }}</td>
+                <td>{{ producto.cantidad }}</td>
+                <td align="right">{{ producto.precio }}</td>
+                <td><button class="btn btn-outline-danger" @click="eliminarProducto(producto.codigo)">Eliminar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center mt-4">
+        <a href="administrar.html" class="btn btn-primary">Menú principal</a>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="listadoEliminar.js"></script>
+</body>
+
+
+</html>

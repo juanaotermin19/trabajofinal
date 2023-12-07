@@ -1,0 +1,84 @@
+body {
+    position:relative;
+   
+  
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+   
+}
+nav a {
+    text-decoration: none;
+    color: #D15A7C;
+    transition: color 0.3s; /* Transición de color suave de 0.3 segundos */
+    transition: font-size 0.4s;/* Transición de tamaño suave de 0.3 segundos */
+    font-size: 16px; /* Tamaño de fuente inicial */
+}
+
+/* Cambio de color al pasar el mouse por encima */
+nav a:hover {
+    color: #8B4513; /* Color diferente al pasar el mouse */
+    font-size: 18px; /* Tamaño de fuente aumentado al pasar el mouse */
+}
+.container {
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    
+}
+main {
+   
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en el viewport */
+    align-items: center; /* Centra verticalmente en el viewport */
+    height: 50vh; /* Establece la altura de la página al 100% del viewport */
+    margin: 0;
+}
+
+.columna {
+    flex: 1; /* Hace que las columnas se expandan para llenar el espacio disponible */
+    text-align: center; /* Centra el contenido de las columnas horizontalmente */
+    padding: 50px;
+}
+
+iframe {
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+}
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 15vh; /* Establece la altura de la página al 100% del viewport */
+    margin: 0;
+    text-align: center;
+        background-color: #D15A7C;
+    justify-content: center;
+    width: 100%;
+    color: #F5DEB3;
+ 
+}
+h1 {
+    font-size: 40px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    
+}

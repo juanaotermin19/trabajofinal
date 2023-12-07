@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* Fuente a Arial */
+    font-weight: 300;
+    /* Fuente más delgada */
+    background-color: white;
+    /* Fondo blanco */
+    color: #8B4513;
+    /* Marrón oscuro */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#D15A7C ;
+    /* Beige claro */
+    color:#F5DEB3;
+    /* Marrón oscuro */
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    /* Títulos tamaño */
+}
+
+h2 {
+    font-size: 28px;
+    /* Títulos 2 */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sabores {
+    background-color: #F5DEB3;
+    /* Beige claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    /* Utilizamos flexbox para colocar las categorías una al lado de la otra */
+    justify-content: space-between;
+    /* Espacio entre las categorías */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px;
+    font-size: 12px;
+    /* Letras para los sabores */
+}
+
+.helado-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tam-gr {
+    font-size: 28px;
+    /* Letras para la categoría "CREMAS" */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    /* Color de los hipervínculos en el footer */
+    text-decoration: none;
+    /* Sin subrayado en los hipervínculos */
+    margin: 0 10px;
+    /* Espaciado entre los hipervínculos */
+}
+nav a {
+text-decoration: none;
+color: #D15A7C;
+transition: color 0.3s; /* Transición de color suave de 0.3 segundos */
+transition: font-size 0.4s;/* Transición de tamaño suave de 0.3 segundos */
+font-size: 16px; /* Tamaño de fuente inicial */
+}
+/* Cambio de color al pasar el mouse por encima */
+nav a:hover {
+color: #8B4513; /* Color diferente al pasar el mouse */
+font-size: 18px; /* Tamaño de fuente aumentado al pasar el mouse */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    
+        body {
+            background-color: #D15A7C; /* Cambia el color de fondo según tus preferencias */
+            color: #8B4513; /* Cambia el color del texto según tus preferencias */
+            padding: 20px;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+        h1 {
+            color:#fff
+        }
+
+        .card {
+            margin: 10px; /* Agrega margen entre las tarjetas */
+        }
+
+        .contenedor-centrado {
+            text-align: center;
+            margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+        }
+        .btn-relleno {
+            padding: 10px 20px; /* Ajusta el relleno del botón según tus preferencias */
+            background-color: #fff; /* Cambia el color de fondo del botón según tus preferencias */
+            color: #D15A7C; /* Cambia el color del texto del botón según tus preferencias */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none; /* Elimina la subrayado del enlace */
+            display: inline-block;
+            transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+        }
+
+        .btn-relleno:hover {
+            background-color: #bd9375; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Carrito de compras</h1>
+<h3>Dulce de Leche Helados</h3>
+<table class="table mt-4">
+<thead class="thead-dark">
+    <tr>
+        <th>Código</th>
+        <th>Descripción</th>
+        <th>Cantidad</th>
+        <th align="right">Precio</th>
+        <th>Imagen</th>
+        <th align="right">Proveedor</th>
+    </tr>
+</thead>
+<tbody id="tablaProductos"> </tbody>
+</table>
+<div class="contenedor-centrado">
+<a href="index.html" class ='btn-relleno'>Menu principal</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="listado.js"></script>
+</body>
+</html>

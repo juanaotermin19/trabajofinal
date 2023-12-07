@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF;
+    color: #8B4513;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display:flex;
+    justify-content:space-around;
+}
+header {
+    background-color: #D15A7C;
+    color:#F5DEB3 ;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.imagen {
+    margin: 10px;
+    max-width: 50%;
+    height: auto;
+}
+
+.texto-imagen {
+    text-align: left;
+    max-width: 50%;
+    margin-left: 20px;
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    width: 100%;
+    display: inline-block;
+    transition: transform 1s ease;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #D15A7C;
+    transition: color 0.3s; /* Transición de color suave de 0.3 segundos */
+    transition: font-size 0.4s;/* Transición de tamaño suave de 0.3 segundos */
+    font-size: 16px; /* Tamaño de fuente inicial */
+}
+/* Cambio de color al pasar el mouse por encima */
+nav a:hover {
+    color: #8B4513; /* Color diferente al pasar el mouse */
+    font-size: 18px; /* Tamaño de fuente aumentado al pasar el mouse */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+/* Aquí puedes definir estilos específicos para pantallas pequeñas */
+ }
+ 
